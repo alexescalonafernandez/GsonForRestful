@@ -3,6 +3,13 @@ GsonForRestfulWebService is a Java library which can be used to design a restful
 
 ## Table of Contents
 1. [GsonForRestfulWebService Goals](#GsonForRestfulWebService-Goals)
+1. [Example](#Example)
+1. [Entities](#Entities)
+1. [Data Transfer Object](#Data-Transfer-Object)
+1. [Entity Serializers](#Entity-Serializers)
+1. [Entity Merge Deserializers](#Entity-Merge-Deserializers)
+1. [Service](#Service)
+1. [GsonForRestfulWebService Class Diagram](#GsonForRestfulWebService-Class-Diagram)
 
 ## GsonForRestfulWebService Goals
 * Create anonymous implementation for [DAO pattern](https://es.wikipedia.org/wiki/Data_Access_Object) through [Factory Method Pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) given an `entity` class through [DAOFactory](/GsonForRestfulWebService/src/rest/ws/dao/DAOFactory.java) class.
@@ -18,6 +25,7 @@ GsonForRestfulWebService is a Java library which can be used to design a restful
 * Serialize an `entity` instance to [JSON-Pure](https://mmikowski.github.io/json-pure/) `json response` given [UriInfo](https://docs.oracle.com/javaee/6/api/javax/ws/rs/core/UriInfo.html), [ServletContext](http://docs.oracle.com/javaee/6/api/javax/servlet/ServletContext.html), [EntityManager, `entity` class and instance. See `serializeT2Message` method at [GsonUtils](/GsonForRestfulWebService/src/rest/ws/gson/GsonUtils.java) class.
 * Serialize a list of `entity` to [JSON-Pure](https://mmikowski.github.io/json-pure/) `json response` given [UriInfo](https://docs.oracle.com/javaee/6/api/javax/ws/rs/core/UriInfo.html), [ServletContext](http://docs.oracle.com/javaee/6/api/javax/servlet/ServletContext.html), [EntityManager, `entity` class and the list of elements. See `serializeListT2Message` method at [GsonUtils](/GsonForRestfulWebService/src/rest/ws/gson/GsonUtils.java) class.
 * Generate [JSON-Pure](https://mmikowski.github.io/json-pure/) `json request data` for filtering, ordering, pagination, etc. See [MessageRequesFilterJsonDataBuilder](/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/MessageRequesFilterJsonDataBuilder.java) class, [JPQLFilterPredicateDeserializer](/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/jpql/JPQLFilterPredicateDeserializer.java) class, [JPQLOrderByPredicateDeserializer](/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/jpql/JPQLOrderByPredicateDeserializer.java) class and [ReadRequestDeserializer](/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/read/ReadRequestDeserializer.java) class.
+
 **[Back to top](#table-of-contents)**
 
 ## Example
@@ -856,6 +864,8 @@ public class Attachment implements Serializable {
 
 ```
 
+**[Back to top](#table-of-contents)**
+
 ### Data Transfer Object
 ```java
 import java.math.BigDecimal;
@@ -984,6 +994,8 @@ public class DecisionDTO {
     }
 }
 ```
+
+**[Back to top](#table-of-contents)**
 
 ### Entity Serializers
 ```java
@@ -1175,6 +1187,8 @@ public class TermSerializer extends AbstractEntitySerializer<Term>{
 
 ```
 
+**[Back to top](#table-of-contents)**
+
 ### Entity Merge Deserializers
 ```java
 import com.google.gson.JsonDeserializationContext;
@@ -1339,6 +1353,8 @@ public class MergeTermDeserializer extends AbstractMergeDeserializer<Term>{
 }
 
 ```
+
+**[Back to top](#table-of-contents)**
 
 ### Service
 ```java
@@ -1586,5 +1602,9 @@ public class DecisionResource {
 
 ```
 
+**[Back to top](#table-of-contents)**
+
 ## GsonForRestfulWebService Class Diagram
 ![Class diagram](/GsonForRestfulWebService/GsonForRestfulWebServiceClassRelation.jpg?raw=true "GsonForRestfulWebService Class Diagram")
+
+**[Back to top](#table-of-contents)**
