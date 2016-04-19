@@ -3,7 +3,7 @@ GsonForRestfulClient is a Java library which can be used by send request to rest
 
 ## GsonForRestfulClient Goals
 * Build a client given the restful web service path and a sequence of query parameters if necessary. See [JsonClient](/GsonForRestfulClient/src/rest/client/gson/JsonClient.java) class.
-* Invoke `get, put, post, delete, options` request where `put and post` contains [JSON-Pure](https://mmikowski.github.io/json-pure/) message on request body. See [JsonClient](/GsonForRestfulClient/src/rest/client/gson/JsonClient.java).
+* Invoke `get, put, post, delete, options` request where `put and post` contains [JSON-Pure](https://mmikowski.github.io/json-pure/) message on request body. See [JsonClient](/GsonForRestfulClient/src/rest/client/gson/JsonClient.java) class.
 * Build [JSON-Pure](https://mmikowski.github.io/json-pure/) request message given the `action, dataType, and data` fields. See `buildMessageRequestAsJson` method at [MessageUtils](/GsonForRestfulClient/src/rest/client/gson/message/MessageUtils.java) class.
 * Deserialize `restful web service response` to [ResponseMessage](/GsonForRestfulClient/src/rest/client/gson/message/ResponseMessage.java) class, given a `Class<T>` (which represent the [DTO](https://en.wikipedia.org/wiki/Data_transfer_object) `Data transfer object` where will be stored the data received on service response), the `restful web service response`, and optionally a [JsonDeserializer](https://github.com/google/gson) class which will be used by [GSON](https://github.com/google/gson) class to deserialize data to [DTO](https://en.wikipedia.org/wiki/Data_transfer_object) class. The [ResponseMessage](/GsonForRestfulClient/src/rest/client/gson/message/ResponseMessage.java) class contains the `action` executed by web service, the `data type` received, a list of [Link](/GsonRestfulCommon/src/rest/gson/common/Link.java) if errors occurred, a list of [LinkProvider](/GsonForRestfulClient/src/rest/client/gson/message/LinkProvider.java) for pagination [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS) support if exists and a map of [LinkProvider](/GsonForRestfulClient/src/rest/client/gson/message/LinkProvider.java) for data [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS) support if exists. See `deserializeResponse` method at [MessageUtils](/GsonForRestfulClient/src/rest/client/gson/message/MessageUtils.java) class.
 
@@ -160,8 +160,16 @@ public class DecisionFilter{
 
 ### Client class
 ```java
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
+import rest.client.gson.JsonClient;
+import rest.client.gson.message.MessageUtils;
 import static rest.gson.common.MessageReservedWord.*;
 import rest.gson.common.filter.FiltersJsonDataBuilder;
+import org.glassfish.jersey.uri.UriComponent;
 
 public class Client{
     public List<DecisionDTO> getDecisions(String targetUrl, DecisionFilter filter){
