@@ -216,7 +216,7 @@ public class Client{
                     JsonObject jo = jsonElement.getAsJsonObject();
                     ldt.setDecisionId(jo.get("decisionId").getAsBigDecimal());
                     ldt.setFolio(jo.get("folio").getAsString());
-                    ldt.setTopicjo.get("topic").getAsString());
+                    ldt.setTopic(jo.get("topic").getAsString());
                     ldt.setTakenDate(new Date(jo.get("emissionDate").getAsLong()));
                     ldt.setEvent(jo.get("event").getAsString());
                     ldt.setStartDate(new Date(jo.get("startDate").getAsLong()));
