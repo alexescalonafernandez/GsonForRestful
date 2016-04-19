@@ -2,14 +2,14 @@
 GsonForRestfulWebService is a Java library which can be used to design a restful web service which support [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS), ease [CRUD](https://es.wikipedia.org/wiki/CRUD) operations through [DAO pattern](https://es.wikipedia.org/wiki/Data_Access_Object), also allow filtering, ordering, pagination, support for [DTO](https://en.wikipedia.org/wiki/Data_transfer_object) class, and decouples service and client throug [GSON](https://github.com/google/gson) library which can work with arbitrary Java objects including pre-existing objects that you do not have source-code of. Thus service and client may decide how serialize/deserialize the data to fit your needs. The communication service-client is strongly recommended to be like [JSON-Pure](https://mmikowski.github.io/json-pure/) although the comunication client-service not always must be like [JSON-Pure](https://mmikowski.github.io/json-pure/), all depends of web service contract definition.
 
 ## Table of Contents
-1. [GsonForRestfulWebService Goals](#GsonForRestfulWebService-Goals)
-1. [Example](#Example)
-1. [Entities](#Entities)
+1. [GsonForRestfulWebService Goals](#gsonforrestfulwebservice-goals)
+1. [Example](#example)
+1. [Entities](#entities)
 1. [Data Transfer Object](#data-transfer-object)
-1. [Entity Serializers](#Entity-Serializers)
-1. [Entity Merge Deserializers](#Entity-Merge-Deserializers)
-1. [Service](#Service)
-1. [GsonForRestfulWebService Class Diagram](#GsonForRestfulWebService-Class-Diagram)
+1. [Entity Serializers](#entity-serializers)
+1. [Entity Merge Deserializers](#entity-merge-deserializers)
+1. [Service](#service)
+1. [GsonForRestfulWebService Class Diagram](#gsonforrestfulwebservice-class-diagram)
 
 ## GsonForRestfulWebService Goals
 * Create anonymous implementation for [DAO pattern](https://es.wikipedia.org/wiki/Data_Access_Object) through [Factory Method Pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) given an `entity` class through [DAOFactory](/GsonForRestfulWebService/src/rest/ws/dao/DAOFactory.java) class.
