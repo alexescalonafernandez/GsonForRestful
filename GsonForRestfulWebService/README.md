@@ -1,6 +1,9 @@
 # GsonForRestfulWebService
 GsonForRestfulWebService is a Java library which can be used to design a restful web service which support [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS), ease [CRUD](https://es.wikipedia.org/wiki/CRUD) operations through [DAO pattern](https://es.wikipedia.org/wiki/Data_Access_Object), also allow filtering, ordering, pagination, support for [DTO](https://en.wikipedia.org/wiki/Data_transfer_object) class, and decouples service and client throug [GSON](https://github.com/google/gson) library which can work with arbitrary Java objects including pre-existing objects that you do not have source-code of. Thus service and client may decide how serialize/deserialize the data to fit your needs. The communication service-client is strongly recommended to be like [JSON-Pure](https://mmikowski.github.io/json-pure/) although the comunication client-service not always must be like [JSON-Pure](https://mmikowski.github.io/json-pure/), all depends of web service contract definition.
 
+## Table of Contents
+1. [GsonForRestfulWebService Goals](#GsonForRestfulWebService-Goals)
+
 ## GsonForRestfulWebService Goals
 * Create anonymous implementation for [DAO pattern](https://es.wikipedia.org/wiki/Data_Access_Object) through [Factory Method Pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) given an `entity` class through [DAOFactory](/GsonForRestfulWebService/src/rest/ws/dao/DAOFactory.java) class.
 * Build [JPQL](https://en.wikipedia.org/wiki/Java_Persistence_Query_Language) query using [JPQLQuery](/GsonForRestfulWebService/src/rest/ws/dao/JPQLQuery.java) class.
@@ -15,6 +18,7 @@ GsonForRestfulWebService is a Java library which can be used to design a restful
 * Serialize an `entity` instance to [JSON-Pure](https://mmikowski.github.io/json-pure/) `json response` given [UriInfo](https://docs.oracle.com/javaee/6/api/javax/ws/rs/core/UriInfo.html), [ServletContext](http://docs.oracle.com/javaee/6/api/javax/servlet/ServletContext.html), [EntityManager, `entity` class and instance. See `serializeT2Message` method at [GsonUtils](/GsonForRestfulWebService/src/rest/ws/gson/GsonUtils.java) class.
 * Serialize a list of `entity` to [JSON-Pure](https://mmikowski.github.io/json-pure/) `json response` given [UriInfo](https://docs.oracle.com/javaee/6/api/javax/ws/rs/core/UriInfo.html), [ServletContext](http://docs.oracle.com/javaee/6/api/javax/servlet/ServletContext.html), [EntityManager, `entity` class and the list of elements. See `serializeListT2Message` method at [GsonUtils](/GsonForRestfulWebService/src/rest/ws/gson/GsonUtils.java) class.
 * Generate [JSON-Pure](https://mmikowski.github.io/json-pure/) `json request data` for filtering, ordering, pagination, etc. See [MessageRequesFilterJsonDataBuilder](/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/MessageRequesFilterJsonDataBuilder.java) class, [JPQLFilterPredicateDeserializer](/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/jpql/JPQLFilterPredicateDeserializer.java) class, [JPQLOrderByPredicateDeserializer](/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/jpql/JPQLOrderByPredicateDeserializer.java) class and [ReadRequestDeserializer](/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/read/ReadRequestDeserializer.java) class.
+**[Back to top](#table-of-contents)**
 
 ## Example
 ### Entities
