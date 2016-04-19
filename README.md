@@ -1,6 +1,6 @@
 # GsonForRestful
 
-GsonForRestful is a Java library that can be used to design Json Restful Web Services and/or Client. For serialization and deserialization purpose the [GSON](https://github.com/google/gson) library is used because can work with arbitrary Java objects including pre-existing objects that you do not have source-code of. This last is very useful at deserialization mode because the class design for this purpose can satisfy the [Single Responsability Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) easily, also [GSON](https://github.com/google/gson) support the use of Java Generics and register serializer and deserialzer for any class without the use of annotations. 
+GsonForRestful is a Java library that can be used to design Json Restful Web Services and/or Client. For serialization and deserialization purpose the [GSON](https://github.com/google/gson) library is used because can work with arbitrary Java objects including pre-existing objects that you do not have source-code of. This last is very useful at deserialization mode because the class design for this purpose can satisfy the [Single Responsability Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) easily, also [GSON](https://github.com/google/gson) support the use of Java Generics and register serializer and deserializer for any class without the use of annotations. 
 
 ## GsonForRestful Goals
 * Design a group of common class which can be used on service and client. See [GsonRestfulCommon](/GsonRestfulCommon/README.md)

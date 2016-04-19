@@ -179,7 +179,7 @@ public class Client{
             boolean flag = false;
             if(filter.getState() > 0){
                 flag = true;
-                filterBuilder.addFilterPredicate("p.StateFk.stateId", BigDecimal.class).
+                filterBuilder.addFilterPredicate("p.stateFk.stateId", BigDecimal.class).
                     addFilter(EQ_OPERATOR, BigDecimal.valueOf(filter.getState()));
             }
             if(filter.getEvent() > 0){
@@ -217,7 +217,7 @@ public class Client{
                     ldt.setDecisionId(jo.get("decisionId").getAsBigDecimal());
                     ldt.setFolio(jo.get("folio").getAsString());
                     ldt.setTopicjo.get("topic").getAsString());
-                    ldt.setTakenDate(new Date(jo.get("takenDate").getAsLong()));
+                    ldt.setTakenDate(new Date(jo.get("emissionDate").getAsLong()));
                     ldt.setEvent(jo.get("event").getAsString());
                     ldt.setStartDate(new Date(jo.get("startDate").getAsLong()));
                     ldt.setFinishDate(new Date(jo.get("finishDate").getAsLong()));
