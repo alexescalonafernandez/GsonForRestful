@@ -5,7 +5,7 @@ GsonForRestfulWebService is a Java library which can be used to design a restful
 1. [GsonForRestfulWebService Goals](#GsonForRestfulWebService-Goals)
 1. [Example](#Example)
 1. [Entities](#Entities)
-1. [Data Transfer Object](#Data-Transfer-Object)
+1. [Data Transfer Object](#data-transfer-object)
 1. [Entity Serializers](#Entity-Serializers)
 1. [Entity Merge Deserializers](#Entity-Merge-Deserializers)
 1. [Service](#Service)
