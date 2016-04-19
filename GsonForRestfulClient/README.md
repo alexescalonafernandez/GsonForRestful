@@ -206,7 +206,7 @@ public class Client{
         JsonClient client = clientBuilder.build();
         String response = client.get();
         ResponseMessage<DecisionDTO> responseMessage = 
-            MessageUtils.deserializeResponse(ListDecisionType.class,
+            MessageUtils.deserializeResponse(DecisionDTO.class,
                                              response,
                                              new JsonDeserializer<DecisionDTO>(){
                 @Override
