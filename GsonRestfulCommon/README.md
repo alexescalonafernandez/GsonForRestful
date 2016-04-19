@@ -62,4 +62,4 @@ public class Main{
 The example prints in console: `{"page":1,"limit":30,"calculate":"false"}`
 
 ## GsonRestfulCommon Class Diagram
-[![Class diagram](https://github.com/alexescalonafernandez/GsonForRestful/tree/master/GsonRestfulCommon/GsonRestfulCommon.jpg)]
+![Class diagram](https://github.com/alexescalonafernandez/GsonForRestful/tree/master/GsonRestfulCommon/GsonRestfulCommon.jpg)
