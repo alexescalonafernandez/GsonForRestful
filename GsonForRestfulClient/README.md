@@ -4,7 +4,7 @@ GsonForRestfulClient is a Java library which can be used by send request to [Res
 ## GsonForRestfulClient Goals
 * Build a [Client](https://en.wikipedia.org/wiki/Client_%28computing%29) given the [Restful](https://en.wikipedia.org/wiki/Representational_state_transfer) [Web Service](https://en.wikipedia.org/wiki/Web_service) **path** and a sequence of **query parameters** if necessary. See [JsonClient](/GsonForRestfulClient/src/rest/client/gson/JsonClient.java) class.
 
-* Invoke **GET, PUT, POST, DELETE, OPTIONS** request where **PUT and POST** contains [JSON-Pure](https://mmikowski.github.io/json-pure/) message on request body. See [JsonClient](/GsonForRestfulClient/src/rest/client/gson/JsonClient.java) class.
+* Invoke [GET, PUT, POST, DELETE, OPTIONS](https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol) request where [PUT](https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol) and [POST](https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol) contains [JSON-Pure](https://mmikowski.github.io/json-pure/) message on request body. See [JsonClient](/GsonForRestfulClient/src/rest/client/gson/JsonClient.java) class.
 
 * Build [JSON-Pure](https://mmikowski.github.io/json-pure/) request message given the **action, dataType, and data** fields. See **buildMessageRequestAsJson** method at [MessageUtils](/GsonForRestfulClient/src/rest/client/gson/message/MessageUtils.java) class.
 
