@@ -6,6 +6,7 @@
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulClient/src/rest/client/gson/message/ResponseGsonDeserializer.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulClient/src/rest/client/gson/message/LinkProvider.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulClient/src/rest/client/gson/message/ResponseMessage.java</file>
+            <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulClient/src/rest/client/gson/JsonClient.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulClient/src/rest/client/gson/message/MessageUtils.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulClient/src/rest/client/gson/message/IGsonResponseVisitor.java</file>
         </group>

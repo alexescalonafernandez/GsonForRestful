@@ -6,23 +6,18 @@
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/create/CreateRequestDeserializer.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/RequestProcessor.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/serializer/entity/hateoas/ILinksGenerator.java</file>
-            <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/dao/DAOFactory.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/jpql/JPQLOrderByPredicateDeserializer.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/create/CreateEntityRequestDeserializer.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/RequestDeserializer.java</file>
-            <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/serializer/entity/hateoas/LinkListSerializer.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/read/ReadRequestDeserializer.java</file>
-            <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/GsonUtils.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/message/Message.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/update/UpdateRequestDeserializer.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/jpql/JPQLFilterPredicateDeserializer.java</file>
-            <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/EntityRequestDeserializer.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/MessageRequesFilterJsonDataBuilder.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/serializer/MessageSerializer.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/delete/DeleteRequestDeserializer.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/delete/DeleteEntityRequestDeserializer.java</file>
             <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/GsonRegistry.java</file>
-            <file>file:/D:/Github%20Projects/GsonForRestful/GsonForRestfulWebService/src/rest/ws/gson/deserializer/request/update/UpdateEntityRequestDeserializer.java</file>
         </group>
     </open-files>
 </project-private>
