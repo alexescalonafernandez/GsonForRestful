@@ -6,7 +6,7 @@ GsonRestfulCommon is a Java library which is used by [GsonForRestfulWebService](
 
 * Contains [Link](/GsonRestfulCommon/src/rest/gson/common/Link.java) class for [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS) **Hypermedia as the Engine of Application State** support and [Log](/GsonRestfulCommon/src/rest/gson/common/Log.java) class for logging support.
 
-* Create mechanism with [Java Generics](https://en.wikipedia.org/wiki/Generics_in_Java) for given a sequence of **field** and its **field type** store the sequence of **filter** to apply to these **field **at [JPQL](https://en.wikipedia.org/wiki/Java_Persistence_Query_Language) query. The stored **filters** can be converted to **json** for sending like query parameter by client using [FiltersJsonDataBuilder](/GsonRestfulCommon/src/rest/gson/common/filter/FiltersJsonDataBuilder.java) class.
+* Create mechanism with [Java Generics](https://en.wikipedia.org/wiki/Generics_in_Java) for given a sequence of **field** and its **field type** store the sequence of **filter** to apply to these **field** at [JPQL](https://en.wikipedia.org/wiki/Java_Persistence_Query_Language) query. The stored **filters** can be converted to **json** for sending like query parameter by client using [FiltersJsonDataBuilder](/GsonRestfulCommon/src/rest/gson/common/filter/FiltersJsonDataBuilder.java) class.
 
 * Create mechanism for given a sequence of **field** store the asecending/descending **order** at [JPQL](https://en.wikipedia.org/wiki/Java_Persistence_Query_Language) query. The stored ordering can be converted to **json** for sending like query parameter by client using [OrderByJsonDataBuilder](/GsonRestfulCommon/src/rest/gson/common/order/OrderByJsonDataBuilder.java) class.
 
