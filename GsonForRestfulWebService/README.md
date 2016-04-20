@@ -779,7 +779,7 @@ public class Attachment implements Serializable {
     @Id
     @Basic(optional = false)
     @NotNull
-    @Column(name = "content_ID")
+    @Column(name = "attachmentId")
     private BigDecimal attachmentId;
     @Basic(optional = false)
     @NotNull
