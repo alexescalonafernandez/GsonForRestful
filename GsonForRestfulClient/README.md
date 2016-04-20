@@ -1,5 +1,5 @@
 # GsonForRestfulClient
-GsonForRestfulClient is a Java library which can be used by send request to [Restful](https://en.wikipedia.org/wiki/Representational_state_transfer) [Web Service](https://en.wikipedia.org/wiki/Web_service), which have been designed using [GsonForRestfulWebService](/GsonForRestfulWebService/README.md) library and deserialize its **response**. 
+GsonForRestfulClient is a Java library which can be used by send **request** to [Restful](https://en.wikipedia.org/wiki/Representational_state_transfer) [Web Service](https://en.wikipedia.org/wiki/Web_service), which have been designed using [GsonForRestfulWebService](/GsonForRestfulWebService/README.md) library and deserialize its **response**. 
 
 ## GsonForRestfulClient Goals
 * Build a [Client](https://en.wikipedia.org/wiki/Client_%28computing%29) given the [Restful](https://en.wikipedia.org/wiki/Representational_state_transfer) [Web Service](https://en.wikipedia.org/wiki/Web_service) **path** and a sequence of **query parameters** if necessary. See [JsonClient](/GsonForRestfulClient/src/rest/client/gson/JsonClient.java) class.
