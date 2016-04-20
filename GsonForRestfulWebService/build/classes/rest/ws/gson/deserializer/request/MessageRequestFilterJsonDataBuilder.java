@@ -13,57 +13,57 @@ import rest.ws.dao.JPQLQuery.JPQLQueryBuilder;
  *
  * @author alexander.escalona
  */
-public class MessageRequesFilterJsonDataBuilder {
+public class MessageRequestFilterJsonDataBuilder {
     private final JPQLQueryBuilder builder;
     private String pagination;
     private boolean paginationEnabled;
 
-    public MessageRequesFilterJsonDataBuilder(String baseQuery) {
+    public MessageRequestFilterJsonDataBuilder(String baseQuery) {
         builder = new JPQLQueryBuilder(baseQuery);
         this.paginationEnabled = true;
     }
     
-    public MessageRequesFilterJsonDataBuilder concatWith(String concatWith) {
+    public MessageRequestFilterJsonDataBuilder concatWith(String concatWith) {
         builder.concatWith(concatWith);
         return this;
     }
 
-    public MessageRequesFilterJsonDataBuilder filter(String filter) {
+    public MessageRequestFilterJsonDataBuilder filter(String filter) {
         if(filter == null || filter.trim().isEmpty())
             builder.filter(null);
         else builder.filter(filter);
         return this;
     }
     
-    public MessageRequesFilterJsonDataBuilder groupBy(String groupBy) {        
+    public MessageRequestFilterJsonDataBuilder groupBy(String groupBy) {        
         if(groupBy == null || groupBy.trim().isEmpty())
             builder.groupBy(null);
         else builder.groupBy(groupBy);
         return this;
     }
 
-    public MessageRequesFilterJsonDataBuilder having(String having) {
+    public MessageRequestFilterJsonDataBuilder having(String having) {
         if(having == null || having.trim().isEmpty())
             builder.having(null);
         else builder.having(having);
         return this;
     }
     
-    public MessageRequesFilterJsonDataBuilder orderBy(String orderBy) {
+    public MessageRequestFilterJsonDataBuilder orderBy(String orderBy) {
         if(orderBy == null || orderBy.trim().isEmpty())
             builder.orderBy(null);
         else builder.orderBy(orderBy);
         return this;
     }
 
-    public MessageRequesFilterJsonDataBuilder pagination(String pagination) {
+    public MessageRequestFilterJsonDataBuilder pagination(String pagination) {
         if(pagination == null || pagination.trim().isEmpty())
             this.pagination = null;
         else this.pagination = pagination;
         return this;
     }
 
-    public MessageRequesFilterJsonDataBuilder paginationEnabled(boolean paginationEnabled) {
+    public MessageRequestFilterJsonDataBuilder paginationEnabled(boolean paginationEnabled) {
         this.paginationEnabled = paginationEnabled;
         return this;
     }
